@@ -35,11 +35,13 @@ namespace ParkLang
         {
             Clear();
             this.ActiveControl = txtPlateNo;
+            LoadData();
         }
 
         private void btnSave_Click(object sender, EventArgs e)
-        { 
-            model.PlateNo = txtPlateNo.Text.Trim();
+        {
+            
+            model.PlateNo = int.Parse(txtPlateNo.Text);
             model.Color = txtColor.Text.Trim();
             model.TimeIn = txtIn.Text.Trim();
             model.TimeOut = txtOut.Text.Trim();
@@ -51,7 +53,20 @@ namespace ParkLang
                 db.SaveChanges();
             }
             Clear();
+            LoadData();
             MessageBox.Show("Save Successfully");
+
+        }
+        void LoadData()
+        {
+            using (dbParkingSystemEntities db = new dbParkingSystemEntities())
+            {
+                dgvCustomer.DataSource = db.Customers.ToList<Customer>();
+            }
+        }
+
+        private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

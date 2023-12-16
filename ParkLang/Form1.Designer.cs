@@ -31,7 +31,6 @@
             this.txtPlateNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
-            this.dgvCustomer = new System.Windows.Forms.DataGridView();
             this.txtColor = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtIn = new System.Windows.Forms.TextBox();
@@ -42,6 +41,13 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtCarModel = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.dgvCustomer = new System.Windows.Forms.DataGridView();
+            this.CostumerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PlateNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TimeOut = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CarModel = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,21 +69,13 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(264, 251);
+            this.btnSave.Location = new System.Drawing.Point(264, 358);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(75, 23);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // dgvCustomer
-            // 
-            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCustomer.Location = new System.Drawing.Point(264, 12);
-            this.dgvCustomer.Name = "dgvCustomer";
-            this.dgvCustomer.Size = new System.Drawing.Size(524, 233);
-            this.dgvCustomer.TabIndex = 3;
             // 
             // txtColor
             // 
@@ -129,7 +127,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(345, 251);
+            this.btnDelete.Location = new System.Drawing.Point(345, 358);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 2;
@@ -138,7 +136,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(426, 251);
+            this.btnCancel.Location = new System.Drawing.Point(426, 358);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 2;
@@ -161,6 +159,66 @@
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Car Model";
+            // 
+            // dgvCustomer
+            // 
+            this.dgvCustomer.AllowUserToDeleteRows = false;
+            this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CostumerId,
+            this.PlateNo,
+            this.Color,
+            this.TimeIn,
+            this.TimeOut,
+            this.CarModel});
+            this.dgvCustomer.Location = new System.Drawing.Point(264, 25);
+            this.dgvCustomer.Name = "dgvCustomer";
+            this.dgvCustomer.ReadOnly = true;
+            this.dgvCustomer.Size = new System.Drawing.Size(512, 327);
+            this.dgvCustomer.TabIndex = 3;
+            // 
+            // CostumerId
+            // 
+            this.CostumerId.DataPropertyName = "CustomerId";
+            this.CostumerId.HeaderText = "Costumer ID";
+            this.CostumerId.Name = "CostumerId";
+            this.CostumerId.ReadOnly = true;
+            this.CostumerId.Visible = false;
+            // 
+            // PlateNo
+            // 
+            this.PlateNo.DataPropertyName = "PlateNo";
+            this.PlateNo.HeaderText = "Plate Number";
+            this.PlateNo.Name = "PlateNo";
+            this.PlateNo.ReadOnly = true;
+            // 
+            // Color
+            // 
+            this.Color.DataPropertyName = "Color";
+            this.Color.HeaderText = "Color";
+            this.Color.Name = "Color";
+            this.Color.ReadOnly = true;
+            // 
+            // TimeIn
+            // 
+            this.TimeIn.DataPropertyName = "TimeIn";
+            this.TimeIn.HeaderText = "Time In";
+            this.TimeIn.Name = "TimeIn";
+            this.TimeIn.ReadOnly = true;
+            // 
+            // TimeOut
+            // 
+            this.TimeOut.DataPropertyName = "TimeOut";
+            this.TimeOut.HeaderText = "TimeOut";
+            this.TimeOut.Name = "TimeOut";
+            this.TimeOut.ReadOnly = true;
+            // 
+            // CarModel
+            // 
+            this.CarModel.DataPropertyName = "CarModel";
+            this.CarModel.HeaderText = "Car Model";
+            this.CarModel.Name = "CarModel";
+            this.CarModel.ReadOnly = true;
             // 
             // Form1
             // 
@@ -196,7 +254,6 @@
         private System.Windows.Forms.TextBox txtPlateNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.DataGridView dgvCustomer;
         private System.Windows.Forms.TextBox txtColor;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtIn;
@@ -207,6 +264,13 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.TextBox txtCarModel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgvCustomer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CostumerId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PlateNo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Color;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeIn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TimeOut;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CarModel;
     }
 }
 
