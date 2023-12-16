@@ -1,0 +1,15 @@
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\ParkLang.exe.config
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\ParkLang.exe
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\ParkLang.pdb
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\EntityFramework.dll
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\EntityFramework.SqlServer.dll
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\EntityFramework.xml
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\bin\Debug\EntityFramework.SqlServer.xml
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.AssemblyReference.cache
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.Form1.resources
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.Properties.Resources.resources
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.GenerateResource.cache
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.CoreCompileInputs.cache
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.CopyComplete
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.exe
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.pdb

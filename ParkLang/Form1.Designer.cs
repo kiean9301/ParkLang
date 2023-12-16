@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPlate = new System.Windows.Forms.TextBox();
+            this.txtPlateNo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvCustomer = new System.Windows.Forms.DataGridView();
@@ -45,12 +45,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
-            // txtPlate
+            // txtPlateNo
             // 
-            this.txtPlate.Location = new System.Drawing.Point(87, 25);
-            this.txtPlate.Name = "txtPlate";
-            this.txtPlate.Size = new System.Drawing.Size(157, 20);
-            this.txtPlate.TabIndex = 0;
+            this.txtPlateNo.Location = new System.Drawing.Point(87, 25);
+            this.txtPlateNo.Name = "txtPlateNo";
+            this.txtPlateNo.Size = new System.Drawing.Size(157, 20);
+            this.txtPlateNo.TabIndex = 0;
             // 
             // label1
             // 
@@ -69,13 +69,14 @@
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // dgvCustomer
             // 
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomer.Location = new System.Drawing.Point(264, 12);
             this.dgvCustomer.Name = "dgvCustomer";
-            this.dgvCustomer.Size = new System.Drawing.Size(333, 233);
+            this.dgvCustomer.Size = new System.Drawing.Size(524, 233);
             this.dgvCustomer.TabIndex = 3;
             // 
             // txtColor
@@ -179,9 +180,11 @@
             this.Controls.Add(this.txtOut);
             this.Controls.Add(this.txtIn);
             this.Controls.Add(this.txtColor);
-            this.Controls.Add(this.txtPlate);
+            this.Controls.Add(this.txtPlateNo);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Park Lang";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -190,7 +193,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtPlate;
+        private System.Windows.Forms.TextBox txtPlateNo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.DataGridView dgvCustomer;
