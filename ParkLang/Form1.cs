@@ -49,8 +49,12 @@ namespace ParkLang
             
             using (dbParkingSystemEntities db = new dbParkingSystemEntities())
             {
+                if(model.CustomerId == 0) // insert
                 db.Customers.Add(model);
+                else
+                    db.Entry(model).State = System.Data.Entity.EntityState.Modified;
                 db.SaveChanges();
+
             }
             Clear();
             LoadData();
