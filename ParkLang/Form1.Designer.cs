@@ -42,7 +42,7 @@
             this.txtCarModel = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvCustomer = new System.Windows.Forms.DataGridView();
-            this.CostumerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgCustomerId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PlateNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TimeIn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -165,7 +165,7 @@
             this.dgvCustomer.AllowUserToDeleteRows = false;
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomer.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CostumerId,
+            this.dgCustomerId,
             this.PlateNo,
             this.Color,
             this.TimeIn,
@@ -176,17 +176,19 @@
             this.dgvCustomer.ReadOnly = true;
             this.dgvCustomer.Size = new System.Drawing.Size(512, 327);
             this.dgvCustomer.TabIndex = 3;
+            this.dgvCustomer.DoubleClick += new System.EventHandler(this.dgvCustomer_DoubleClick);
             // 
-            // CostumerId
+            // dgCustomerId
             // 
-            this.CostumerId.DataPropertyName = "CustomerId";
-            this.CostumerId.HeaderText = "Costumer ID";
-            this.CostumerId.Name = "CostumerId";
-            this.CostumerId.ReadOnly = true;
-            this.CostumerId.Visible = false;
+            this.dgCustomerId.DataPropertyName = "CustomerId";
+            this.dgCustomerId.HeaderText = "Costumer ID";
+            this.dgCustomerId.Name = "dgCustomerId";
+            this.dgCustomerId.ReadOnly = true;
+            this.dgCustomerId.Visible = false;
             // 
             // PlateNo
             // 
+            this.PlateNo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.PlateNo.DataPropertyName = "PlateNo";
             this.PlateNo.HeaderText = "Plate Number";
             this.PlateNo.Name = "PlateNo";
@@ -265,7 +267,7 @@
         private System.Windows.Forms.TextBox txtCarModel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dgvCustomer;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CostumerId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgCustomerId;
         private System.Windows.Forms.DataGridViewTextBoxColumn PlateNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Color;
         private System.Windows.Forms.DataGridViewTextBoxColumn TimeIn;

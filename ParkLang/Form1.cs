@@ -59,6 +59,7 @@ namespace ParkLang
         }
         void LoadData()
         {
+            dgvCustomer.AutoGenerateColumns = false;
             using (dbParkingSystemEntities db = new dbParkingSystemEntities())
             {
                 dgvCustomer.DataSource = db.Customers.ToList<Customer>();
@@ -68,6 +69,26 @@ namespace ParkLang
         private void dgvCustomer_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dgvCustomer_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvCustomer.CurrentRow.Index != -1)
+            {
+                model.CustomerId = Convert.ToInt32(dgvCustomer.CurrentRow.Cells["dgCustomerId"].Value);
+                using (dbParkingSystemEntities db = new dbParkingSystemEntities())
+                {
+                    model = db.Customers.Where(x => x.CustomerId == model.CustomerId).FirstOrDefault();
+
+                    txtPlateNo.Text = model.PlateNo.ToString();
+                    txtColor.Text = model.Color;
+                    txtIn.Text = model.TimeIn;
+                    txtOut.Text = model.TimeOut;
+                    txtCarModel.Text = model.CarModel;
+                }
+                btnSave.Text = "UPDATE";
+                btnDelete.Enabled = true;
+            }
         }
     }
 }
