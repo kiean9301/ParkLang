@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkLang", "ParkLang\ParkLang.csproj", "{02FC3519-EB02-40ED-893F-12C0DBE9A55F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{67921860-F200-4238-A8E2-618C11DF7D96}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67921860-F200-4238-A8E2-618C11DF7D96}.Debug|Any CPU.ActiveCfg = Debug
+		{67921860-F200-4238-A8E2-618C11DF7D96}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
