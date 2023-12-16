@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParkLang", "ParkLang\ParkLang.csproj", "{02FC3519-EB02-40ED-893F-12C0DBE9A55F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02FC3519-EB02-40ED-893F-12C0DBE9A55F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC34343F-772E-41EC-82F9-CF2207ED23C5}
+	EndGlobalSection
+EndGlobal
