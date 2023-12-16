@@ -94,5 +94,26 @@ namespace ParkLang
                 btnDelete.Enabled = true;
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure to Delete this RECORD! ?", "Message", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                using (dbParkingSystemEntities db = new dbParkingSystemEntities())
+                {
+                    var entry = db.Entry(model);
+                    if (entry.State == System.Data.Entity.EntityState.Detached)
+                    {
+                        db.Customers.Attach(model);
+                        db.Customers.Remove(model);
+                        db.SaveChanges();
+                        LoadData();
+                        Clear();
+                        MessageBox.Show("Deleted Successfuly!");
+
+                    }
+                }
+            }
+        }
     }
 }
