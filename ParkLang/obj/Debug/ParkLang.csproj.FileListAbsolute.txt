@@ -13,3 +13,5 @@ T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.CoreCompi
 T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.csproj.CopyComplete
 T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.exe
 T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.pdb
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.ParkLang.resources
+T:\VS-Respository\ParkLang\ParkLang\ParkLang\obj\Debug\ParkLang.Register.resources

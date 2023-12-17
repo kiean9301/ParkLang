@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbParkingSystemModel1StoreContainer" CdmEntityContainer="dbParkingSystemEntities1">
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="dbParkingSystemModel1.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="PlateNo" ColumnName="PlateNo" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
+          <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+          <ScalarProperty Name="CarModel" ColumnName="CarModel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="dbParkingSystemModel1.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace ParkLang
 {
-    public partial class Form1 : Form
+    public partial class ParkLang : Form
     {
         Customer model = new Customer();
-        public Form1()
+        public ParkLang()
         {
             InitializeComponent();
         }

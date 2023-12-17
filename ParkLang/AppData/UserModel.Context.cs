@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ParkLang
+namespace ParkLang.AppData
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dbParkingSystemEntities : DbContext
+    public partial class dbParkingSystemEntities1 : DbContext
     {
-        public dbParkingSystemEntities()
-            : base("name=dbParkingSystemEntities")
+        public dbParkingSystemEntities1()
+            : base("name=dbParkingSystemEntities1")
         {
         }
     
@@ -25,7 +25,7 @@ namespace ParkLang
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Customer> Customers { get; set; }
-        public object User { get; internal set; }
+        public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }
